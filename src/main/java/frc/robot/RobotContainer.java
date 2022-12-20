@@ -56,6 +56,6 @@ public class RobotContainer {
   }
 
   public PIDControl getPIDControl(int setpoint) {
-    return new PIDControl(m_Drivetrain, setpoint);
+    return new PIDControl(m_Drivetrain, setpoint, 0.1, 0.0, 0.1);
   }
 }
